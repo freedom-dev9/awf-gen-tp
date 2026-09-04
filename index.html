@@ -1,0 +1,8 @@
+  <iframe id="app" allowfullscreen></iframe>
+  <script>
+    // ⚠️ แก้บรรทัดนี้ทุกครั้งที่ Deployment URL เปลี่ยน (ตอน Deploy > New deployment ใหม่)
+    var BASE = "https://script.google.com/macros/s/PASTE_YOUR_DEPLOYMENT_ID_HERE/exec";
+    var BASE = "https://script.google.com/macros/s/AKfycbyeXiLNzYBAz9pXYA06HwdLqt4z1e5mtJ2FrIbDzqwkhP9VTkeklLlbk52OB1OnJany/exec";
+    document.getElementById('app').src = BASE + window.location.search;
+  </script>
+</body>
