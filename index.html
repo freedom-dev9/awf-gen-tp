@@ -1,8 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SAP Authorization Viewer — MM-PUR</title>
+  <!-- favicon ฝังเป็น SVG ในไฟล์เลย (ไม่ต้อง host รูปข้างนอก / ไม่มี 404 ไอคอนพัง) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%232f5496'/%3E%3Cpath d='M32 12a10 10 0 0 0-10 10v6h-3a3 3 0 0 0-3 3v18a3 3 0 0 0 3 3h26a3 3 0 0 0 3-3V31a3 3 0 0 0-3-3h-3v-6a10 10 0 0 0-10-10zm0 5a5 5 0 0 1 5 5v6H27v-6a5 5 0 0 1 5-5zm0 20a4 4 0 0 1 2 7.5V47a2 2 0 0 1-4 0v-2.5A4 4 0 0 1 32 37z' fill='%23fff'/%3E%3C/svg%3E">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%232f5496'/%3E%3Cpath d='M32 12a10 10 0 0 0-10 10v6h-3a3 3 0 0 0-3 3v18a3 3 0 0 0 3 3h26a3 3 0 0 0 3-3V31a3 3 0 0 0-3-3h-3v-6a10 10 0 0 0-10-10zm0 5a5 5 0 0 1 5 5v6H27v-6a5 5 0 0 1 5-5zm0 20a4 4 0 0 1 2 7.5V47a2 2 0 0 1-4 0v-2.5A4 4 0 0 1 32 37z' fill='%23fff'/%3E%3C/svg%3E">
+  <style>
+    html, body { margin:0; padding:0; height:100%; overflow:hidden; background:#0a0a0a; }
+    iframe { width:100%; height:100vh; border:none; display:block; }
+  </style>
+</head>
+<body>
   <iframe id="app" allowfullscreen></iframe>
   <script>
     // ⚠️ แก้บรรทัดนี้ทุกครั้งที่ Deployment URL เปลี่ยน (ตอน Deploy > New deployment ใหม่)
-    var BASE = "https://script.google.com/macros/s/PASTE_YOUR_DEPLOYMENT_ID_HERE/exec";
     var BASE = "https://script.google.com/macros/s/AKfycbyeXiLNzYBAz9pXYA06HwdLqt4z1e5mtJ2FrIbDzqwkhP9VTkeklLlbk52OB1OnJany/exec";
     document.getElementById('app').src = BASE + window.location.search;
   </script>
 </body>
+</html>
